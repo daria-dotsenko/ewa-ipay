@@ -1,0 +1,178 @@
+/* todo make universal classes for some fonts */
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.section {
+  padding-bottom: 183px;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #969DAC;
+}
+
+.nav-link:hover {
+  color: #969DAC;
+}
+
+.nav-link:first-child {
+  padding-left: 0;
+}
+
+.btn-green {
+  background-color: #0AB48C;
+  border-color: #0AB48C;
+  color: #FFFFFF;
+  padding: 8px 40px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.btn-green:hover {
+  background-color: #0AB48C;
+  border-color: #0AB48C;
+}
+
+.about-project > * {
+  margin-bottom: 24px;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 80px;
+  color: #2D3C5A;
+}
+
+.visa {
+  margin-top: 84px;
+}
+
+.about-visa-text {
+  display: flex;
+  align-items: center;
+}
+
+.how-it-work-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #2D3C5A;
+  margin-bottom: 24px;
+}
+
+.how-it-work-text {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+.rounded-container {
+  position: relative;
+  background: #F7FBFF;
+  border-radius: 24px;
+  height: 540px;
+  width: 540px;
+}
+
+.cash-out-container {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  width: 330px;
+  height: 280px;
+  padding: 24px 14px;
+  background: #FFFFFF;
+  box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.05);
+  border-radius: 24px;
+}
+
+.cash-out-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #2D3C5A;
+}
+
+.cash-out-subtext {
+
+}
+
+.dashed-line {
+  border-top: 2px dashed #E0E2E6;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.available-funds-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #2D3C5A;
+}
+
+.bth-cash-out {
+  position: absolute;
+  bottom: 24px;
+  left: 14px;
+  right: 14px;
+}
+
+.cash-out-man {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /*z-index: 999;*/
+}
+
+.output-salary-container {
+  margin-bottom: 40px;
+}
+
+.vertical-line {
+  width: 2px;
+  background-color: #F0F0F0;
+  margin-right: 30px;
+}
+
+
+/* universal classes */
+
+.s-translucent-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #969DAC;
+}
+
+.sm-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #5A6478;
+}
+
+.m-text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #2D3C5A;
+  margin-bottom: 24px;
+  margin-top: 18px;
+}
+
