@@ -1,22 +1,25 @@
-/* todo make universal classes for some fonts */
+/* todo make universal classes for some fonts (padding and margin */
+/* todo to go through the titles and substitute the h1-6 */
+
+/* tags styles */
 
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  font-feature-settings: 'tnum' on, 'lnum' on;
 }
 
-.section {
+section {
   padding-bottom: 183px;
 }
+
+/* nav section */
 
 .nav-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  display: flex;
-  align-items: center;
-  font-feature-settings: 'tnum' on, 'lnum' on;
   color: #969DAC;
 }
 
@@ -28,56 +31,30 @@ body {
   padding-left: 0;
 }
 
-.btn-green {
-  background-color: #0AB48C;
-  border-color: #0AB48C;
-  color: #FFFFFF;
-  padding: 8px 40px;
-  font-size: 18px;
-  line-height: 28px;
-}
+/* salary section */
 
-.btn-green:hover {
-  background-color: #0AB48C;
-  border-color: #0AB48C;
-}
-
-.about-project > * {
+.salary__about > * {
   margin-bottom: 24px;
 }
 
-.project-name {
+.salary__name {
   font-weight: 700;
   font-size: 62px;
   line-height: 80px;
   color: #2D3C5A;
 }
 
-.visa {
+.salary__visa {
   margin-top: 84px;
 }
 
-.about-visa-text {
-  display: flex;
-  align-items: center;
-}
+/* works section */
 
-.how-it-work-title {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  font-feature-settings: 'tnum' on, 'lnum' on;
-  color: #2D3C5A;
-  margin-bottom: 24px;
-}
-
-.how-it-work-text {
-  text-align: center;
+.works__title {
   margin-bottom: 60px;
 }
 
-
-.rounded-container {
+.works__rounded {
   position: relative;
   background: #F7FBFF;
   border-radius: 24px;
@@ -85,7 +62,16 @@ body {
   width: 540px;
 }
 
-.cash-out-container {
+.works__cash-out-man {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  /*z-index: 999;*/
+}
+
+/* cash-out section */
+
+.cash-out {
   position: absolute;
   right: 60px;
   top: 60px;
@@ -97,82 +83,121 @@ body {
   border-radius: 24px;
 }
 
-.cash-out-text {
+.cash-out__text {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  font-feature-settings: 'tnum' on, 'lnum' on;
   color: #2D3C5A;
 }
 
-.cash-out-subtext {
-
-}
-
-.dashed-line {
-  border-top: 2px dashed #E0E2E6;
-  width: 100%;
-  margin: 24px 0;
-}
-
-.available-funds-text {
+.cash-out__funds-text {
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-  font-feature-settings: 'tnum' on, 'lnum' on;
   color: #2D3C5A;
 }
 
-.bth-cash-out {
+.cash-out__btn {
   position: absolute;
   bottom: 24px;
   left: 14px;
   right: 14px;
 }
 
-.cash-out-man {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /*z-index: 999;*/
-}
+/* output section */
 
-.output-salary-container {
+.output {
   margin-bottom: 40px;
 }
 
-.vertical-line {
-  width: 2px;
-  background-color: #F0F0F0;
-  margin-right: 30px;
+/* benefits section */
+
+.benefits {
+  padding-bottom: 100px;
 }
 
-
-/* universal classes */
-
-.s-translucent-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  font-feature-settings: 'tnum' on, 'lnum' on;
-  color: #969DAC;
+.benefits__target > * {
+  margin: 15px;
 }
 
-.sm-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  font-feature-settings: 'tnum' on, 'lnum' on;
-  color: #5A6478;
+.benefits__cards .card:nth-child(2) {
+  margin: auto 30px;
 }
 
-.m-text {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28px;
-  font-feature-settings: 'tnum' on, 'lnum' on;
-  color: #2D3C5A;
-  margin-bottom: 24px;
-  margin-top: 18px;
+.card-border {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 24px;
 }
 
+.benefits__credit-card:hover {
+  background: rgba(85, 165, 255, 0.05);
+  border: 1px solid rgba(85, 165, 255, 0.1);
+}
+
+.benefits__statistic:hover {
+  background: rgba(255, 95, 95, 0.05);
+  border: 1px solid rgba(255, 95, 95, 0.1);
+}
+
+.benefits__check:hover {
+  background: rgba(20, 210, 165, 0.05);
+  border: 1px solid rgba(20, 210, 165, 0.1);
+}
+
+/* joining section */
+
+.joining {
+  margin-top: 42px;
+  margin-bottom: 14px;
+}
+
+.joining__btn {
+  margin: 24px 0;
+}
+
+/* q-and-a section */
+
+.q-and-a {
+  background: linear-gradient(180deg, #F7FBFF 0%, rgba(247, 251, 255, 0) 100%);
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.q-and-a__email {
+  margin-top: 42px;
+  margin-bottom: 80px;
+}
+
+.q-and-a__img {
+  padding-bottom: 24px;
+}
+
+.accordion {
+  display: inline-block;
+  width: max-content;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: inherit;
+}
+
+.card-telegram {
+  width: 160px;
+  background: rgba(73, 165, 232, 0.1);
+  border-radius: 24px;
+}
+
+.card-viber {
+  width: 160px;
+  background: rgba(136, 97, 178, 0.1);
+  border-radius: 24px;
+}
+
+.card-facebook {
+  width: 160px;
+  background: rgba(74, 153, 247, 0.1);
+  border-radius: 24px;
+}

@@ -1,0 +1,43 @@
+.s-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #969DAC;
+}
+
+.sm-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3C5A;
+}
+
+.m-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5A6478;
+}
+
+.ml-text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2D3C5A;
+}
+
+.l-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D3C5A;
+}
+
+.xl-text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #2D3C5A;
+  margin-bottom: 24px;
+}
+
