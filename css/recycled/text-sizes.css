@@ -1,3 +1,10 @@
+.xs-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #969DAC;
+}
+
 .s-text {
   font-weight: 400;
   font-size: 16px;
@@ -21,8 +28,8 @@
 
 /* h4 */
 .ml-text {
-  font-weight: 600;
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 28px;
   color: #2D3C5A;
 }
@@ -41,6 +48,19 @@
   font-size: 32px;
   line-height: 38px;
   color: #2D3C5A;
-  margin-bottom: 24px;
 }
 
+.green-text {
+  color: #0AB48C;
+}
+
+.red-text {
+  color: #FF5F5F;
+}
+
+.input-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: red;
+}

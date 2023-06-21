@@ -30,13 +30,36 @@
   box-shadow: 0px 20px 30px rgba(45, 60, 90, 0.1);
 }
 
-.btn-blue:focus {
+.btn-blue:focus, .btn-green:focus, .btn-dark:focus, .btn-close:focus {
+  box-shadow: none;
+}
+
+.btn-language {
+  color: #969DAC;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.btn-language:hover {
+  color: #969DAC;
+}
+
+.btn-language:focus {
   box-shadow: none;
 }
 
 .contact__btn {
   padding: 16px 33px;
+  margin-top: 32px;
   width: 220px;
   max-width: 100%;
   border-radius: 8px;
+}
+
+.btn-close {
+  position: absolute;
+  right: 41px;
+  top: 41px;
 }

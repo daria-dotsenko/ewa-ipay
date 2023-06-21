@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/recycled/buttons.css">
   <link rel="stylesheet" href="/css/recycled/lines.css">
   <link rel="stylesheet" href="/css/recycled/text-sizes.css">
+  <link rel="stylesheet" href="/css/recycled/paddings-and-margins.css">
   <title>EWA</title>
 </head>
 
@@ -26,7 +27,16 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Язык</a>
+            <div class="dropdown">
+              <button class="btn btn-language dropdown-toggle-split" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                RU
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">UA</a></li>
+                <li><a class="dropdown-item" href="#">EN</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
         <ul class="nav justify-content-center align-items-center">
@@ -50,8 +60,8 @@
       <div class="container">
         <div class="row">
           <div class="col justify-content-start">
-            <div class="salary__about">
-              <h1 class="salary__name">Зарплата <br> каждый день</h1>
+            <div class="salary__about mb-m">
+              <h1 class="salary__name mb-m">Зарплата <br> каждый день</h1>
               <p class="m-text">Первый сервис в Украине, с которым сотрудники могут получать
                 зарплату в
                 любом
@@ -65,15 +75,17 @@
               <img src="/img/visa-logo.svg" alt="visa-logo">
             </div>
           </div>
-          <img src="/img/about-project-image.svg" alt="about-project-image" class="col justify-content-end">
+          <div class="col salary__image">
+            <img src="/img/about-project-image.svg" alt="about-project-image" class="col justify-content-end">
+          </div>
         </div>
       </div>
     </section>
 
     <section class="works" id="works">
       <div class="container">
-        <div class="works__title d-flex flex-column align-items-center">
-          <h2 class="xl-text">Как это работает</h2>
+        <div class="mb-xl d-flex flex-column align-items-center">
+          <h2 class="xl-text mb-m">Как это работает</h2>
           <p class="m-text text-center">Больше не нужно долго ждать Дня Зарплаты. Теперь можно получать <br>
             зарплату
             каждый
@@ -81,43 +93,157 @@
           </p>
         </div>
         <div class="row">
-          <div class="works__rounded col justify-content-start">
-            <div class="cash-out">
-              <div class="d-flex">
-                <img src="/img/card.svg" alt="card">
-                <div class="ms-2">
-                  <div class="cash-out__text mb-1">Снять деньги</div>
-                  <h6 class="s-text">Снимайте доступные деньги</h6>
+          <div class="col justify-content-end">
+            <div class="d-flex align-items-start">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-output" role="tabpanel"
+                  aria-labelledby="v-pills-output-tab">
+                  <div class="works__rounded col justify-content-start">
+                    <div class="cash-out">
+                      <div class="d-flex">
+                        <img class="works__img" src="/img/card.svg" alt="card">
+                        <div>
+                          <div class="works__text">Снять деньги</div>
+                          <h6 class="s-text">Снимайте доступные деньги</h6>
+                        </div>
+                      </div>
+                      <div class="dashed-line"></div>
+                      <div class="cash-out__funds">
+                        <div class="cash-out__funds-text mb-3">12 000 <img src="/img/UAH.svg" alt="UAH" class="mx-auto">
+                        </div>
+                        <h6 class="s-text">Доступные средства для снятия</h6>
+                      </div>
+                      <button class="cash-out__btn btn btn-green" type="button">Снять деньги</button>
+                    </div>
+                    <img class="works__cash-out-man" src="/img/cash-out-man.svg" alt="cash-out-man">
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-statistic" role="tabpanel"
+                  aria-labelledby="v-pills-statistic-tab">
+                  <div class="works__rounded col justify-content-start">
+                    <div class="works__inner">
+                      <div class="d-flex">
+                        <img class="works__img" src="/img/statistic-horizontal.svg" alt="statistic">
+                        <div>
+                          <div class="works__text">Статистика</div>
+                          <h6 class="s-text">Ваша активность в системе</h6>
+                        </div>
+                      </div>
+                      <div class="dashed-line"></div>
+                      <p class="s-text mb-sm">Ноябрь 2020</p>
+                      <div class="d-flex">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-6 d-flex flex-column">
+                              <div class="row h-100 mb-sm">
+                                <div class="col d-flex">
+                                  <img class="works__icon" src="/img/vacation.svg" alt="vacation">
+                                  <div>
+                                    <p class="s-text">Отпускные</p>
+                                    <p class="xs-text">29.02.2021</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row h-100 mb-sm">
+                                <div class="col d-flex">
+                                  <img class="works__icon" src="/img/output.svg" alt="output">
+                                  <div>
+                                    <p class="s-text">Вывод средств</p>
+                                    <p class="xs-text">24.02.2021</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row h-100 mb-sm">
+                                <div class="col d-flex">
+                                  <img class="works__icon" src="/img/premium.svg" alt="premium">
+                                  <div>
+                                    <p class="s-text">Премия</p>
+                                    <p class="xs-text">18.02.2021</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row h-100 mb-sm">
+                                <div class="col d-flex">
+                                  <img class="works__icon" src="/img/prepayment.svg" alt="prepayment">
+                                  <div>
+                                    <p class="s-text">Выплата за перву</p>
+                                    <p class="xs-text">15.02.2021</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row h-100 mb-sm">
+                                <div class="col d-flex">
+                                  <img class="works__icon" src="/img/output.svg" alt="output">
+                                  <div>
+                                    <p class="s-text">Вывод средств</p>
+                                    <p class="xs-text">14.02.2021</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row h-100 mb-sm">
+                                <div class="col d-flex">
+                                  <img class="works__icon" src="/img/sick.svg" alt="sick">
+                                  <div>
+                                    <p class="s-text">Больничный</p>
+                                    <p class="xs-text">01.12.2020</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column">
+                              <div class="row h-100">
+                                <div class="col text-end s-text green-text">+ 15 000 грн</div>
+                              </div>
+                              <div class="row h-100">
+                                <div class="col text-end s-text red-text">- 300 грн</div>
+                              </div>
+                              <div class="row h-100">
+                                <div class="col text-end s-text green-text">+ 10 000 грн</div>
+                              </div>
+                              <div class="row h-100">
+                                <div class="col text-end s-text green-text">+ 10 000 грн</div>
+                              </div>
+                              <div class="row h-100">
+                                <div class="col text-end s-text red-text">- 200 грн</div>
+                              </div>
+                              <div class="row h-100">
+                                <div class="col text-end s-text green-text">+ 5 000 грн</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="dashed-line"></div>
-              <div class="cash-out__funds">
-                <div class="cash-out__funds-text mb-3">12 000 <img src="/img/UAH.svg" alt="UAH" class="mx-auto"></div>
-                <h6 class="s-text">Доступные средства для снятия</h6>
-              </div>
-              <button class="cash-out__btn btn btn-green" type="button">Снять деньги</button>
-            </div>
-            <img class="works__cash-out-man" src="/img/cash-out-man.svg" alt="cash-out-man">
-          </div>
-          <div class="col justify-content-end">
-            <div class="output d-flex flex-row">
-              <div class="vertical-line"></div>
-              <div class="output__inner">
-                <img src="/img/card.svg" alt="output-salary-card">
-                <h4 class="ml-text">Выводите зарплату</h4>
-                <p class="m-text">Не ждите даты выдачи зарплаты, теперь вы можете ее получать в любой день! Выводить
-                  зарплату можно на ваш IBAN счет, или на любую карту.
-                </p>
-              </div>
-            </div>
-            <div class="statistic d-flex flex-row">
-              <div class="vertical-line"></div>
-              <div class="statistic__inner">
-                <img src="/img/statistic.svg" alt="statistic">
-                <h4 class="ml-text">Доступ к статистике</h4>
-                <p class="m-text">Каждый день вы получаете обновленную статистику по вашей
-                  зарплате.
-                </p>
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-output-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-output"
+                  role="tab" aria-controls="v-pills-output" aria-selected="true">
+                  <div class="output d-flex flex-row">
+                    <div class="output__inner">
+                      <img src="/img/card.svg" alt="output-salary-card">
+                      <h4 class="ml-text mb-m">Выводите зарплату</h4>
+                      <p class="m-text">Не ждите даты выдачи зарплаты, теперь вы можете ее получать в любой день!
+                        Выводить
+                        зарплату можно на ваш IBAN счет, или на любую карту.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="nav-link" id="v-pills-statistic-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-statistic"
+                  role="tab" aria-controls="v-pills-statistic" aria-selected="false">
+                  <div class="statistic d-flex flex-row">
+                    <div class="statistic__inner">
+                      <img src="/img/statistic.svg" alt="statistic">
+                      <h4 class="ml-text mb-m">Доступ к статистике</h4>
+                      <p class="m-text">Каждый день вы получаете обновленную статистику по вашей зарплате.
+                      </p>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -128,67 +254,103 @@
     <section class="benefits" id="benefits">
       <div class="container">
         <div class="d-flex flex-column align-items-center text-center">
-          <h2 class="xl-text">Преимущества сервиса</h2>
+          <h2 class="xl-text mb-m">Преимущества сервиса</h2>
           <p class="m-text">Первый сервис в Украине, с которым сотрудники могут получить <br>
             заработанную зарплату в любой удобный день.
           </p>
         </div>
-        <div class="benefits__target d-flex justify-content-center">
-          <div class="employees">
-            <p class="m-text">Для сотрудника</p>
-            <div class="horizontal-line"></div>
-          </div>
-          <div class="employer">
-            <p class="m-text">Для работодателя</p>
-            <div class="horizontal-line"></div>
-          </div>
+        <div class="d-flex justify-content-center">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-employees-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-employees"
+                type="button" role="tab" aria-controls="pills-employees" aria-selected="true">Для сотрудника
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-employer-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-employer"
+                type="button" role="tab" aria-controls="pills-employer" aria-selected="false">Для работодателя
+              </button>
+            </li>
+          </ul>
         </div>
-        <div class="benefits__cards d-flex">
-          <div class="row flex flex-row gap-3">
-            <div class="col">
-              <div class="card-border benefits__credit-card card h-100 text-center">
-                <div class="card-body p-4">
-                  <img src="/img/card.svg" alt="card">
-                  <h4 class="card-title ml-text">Доступ к деньгам</h4>
-                  <p class="card-text m-text">Вы можете просматривать свой доступный баланс на зарплатном счету и
-                    перевести
-                    необходимую сумму на свою карту</p>
+        <div class="tab-content mb-l" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-employees" role="tabpanel"
+            aria-labelledby="pills-employees-tab">
+            <div class="benefits__cards d-flex">
+              <div class="row flex flex-row gap-3">
+                <div class="col">
+                  <div class="card-border benefits__credit-card card h-100 text-center">
+                    <div class="card-body p-4">
+                      <img src="/img/card.svg" alt="card">
+                      <h4 class="ml-text mb-m">Доступ к деньгам</h4>
+                      <p class="m-text">Вы можете просматривать свой доступный баланс на зарплатном счету и
+                        перевести
+                        необходимую сумму на свою карту</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-border benefits__statistic card h-100 text-center">
+                    <div class="card-body p-4">
+                      <img src="/img/statistic-red.svg" alt="statistic-red">
+                      <h4 class="ml-text mb-m">Статистика дохода</h4>
+                      <p class="m-text">Детальная статистика начислений зарплаты и снятия средств позволяет
+                        понимать
+                        свои финансовые потоки</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-border benefits__check card h-100 text-center">
+                    <div class="card-body p-4">
+                      <img src="/img/check.svg" alt="check">
+                      <h4 class="ml-text mb-m">Доступ везде и всегда</h4>
+                      <p class="m-text">“Зарплата каждый день” - это онлайн сервис. Вам необходимо только
+                        подключение
+                        к интернету, компьютер или смартфон</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card-border benefits__statistic card h-100 text-center">
-                <div class="card-body p-4">
-                  <img src="/img/statistic-red.svg" alt="statistic-red">
-                  <h4 class="card-title ml-text">Статистика дохода</h4>
-                  <p class="card-text m-text">Детальная статистика начислений зарплаты и снятия средств позволяет
-                    понимать
-                    свои финансовые потоки</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card-border benefits__check card h-100 text-center">
-                <div class="card-body p-4">
-                  <img src="/img/check.svg" alt="check">
-                  <h4 class="card-title ml-text">Доступ везде и всегда</h4>
-                  <p class="card-text m-text">“Зарплата каждый день” - это онлайн сервис. Вам необходимо только
-                    подключение
-                    к интернету, компьютер или смартфон</p>
-                </div>
+            <div class="joining align-items-center">
+              <div class="mx-auto text-center">
+                <button class="btn btn-blue mb-s">Ваша компания еще не подключена?
+                </button>
+                <h3 class="l-text mb-m">Ускорьте процесс подключения вашей <br> компании к сервису "Зарплата каждый
+                  день"
+                </h3>
+                <button class="btn btn-dark mb-m" data-bs-toggle="modal" data-bs-target="#staticBackdropEmployee">
+                  Оставить
+                  заявку
+                </button>
+                <p class="s-text">Уже более 8 000 сотрудников оставили заявку</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="joining align-items-center mt-4">
-          <div class="mx-auto text-center">
-            <button class="btn btn-blue">Ваша компания еще не подключена?
-            </button>
-            <h3 class="l-text">Ускорьте процесс подключения вашей <br> компании к сервису "Зарплата каждый
-              день"
-            </h3>
-            <button class="joining__btn btn btn-dark">Оставить заявку</button>
-            <p class="s-text">Уже более 8 000 сотрудников оставили заявку</p>
+          <div class="tab-pane fade" id="pills-employer" role="tabpanel" aria-labelledby="pills-employer-tab">
+            <div class="mx-auto text-center">
+              <p class="benefits__employer-title mb-m">Много работадателей по всему миру <br> уже предлагают ранний
+                доступ к
+                зарплате</p>
+              <div class="mb-m">
+                <img src="/img/walmart.svg" alt="walmart">
+                <img src="/img/mazda.svg" alt="mazda">
+                <img src="/img/burger-king.svg" alt="burger-king">
+                <img src="/img/mcdonalds.svg" alt="mcdonalds">
+                <img src="/img/dominos.svg" alt="dominos">
+                <img src="/img/disney.svg" alt="disney">
+              </div>
+              <p class="m-text mb-m">Это позволяет увеличить удовлетворенность рабочими условиями, увеличивает
+                взаимное <br>
+                доверие между
+                работадатеолем и сотрудником, а так же увеличивает финансовое <br> благополучие сотрудников.</p>
+              <button class="btn btn-dark benefits__btn" type="button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdropEmployer">Подключиться
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -197,7 +359,7 @@
     <section class="q-and-a" id="q-and-a">
       <div class="container">
         <div class="d-flex flex-column align-items-center">
-          <h2 class="xl-text">Вопросы и ответы</h2>
+          <h2 class="xl-text mb-xl">Вопросы и ответы</h2>
           <div class="accordion w-100" id="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -254,9 +416,9 @@
           <div class="q-and-a__email sm-text">Если у вас остались вопросы пишите нам <a class="remove-link-styles"
             href="mailto:help@ewa.com">help@ewa.com</a>
           </div>
-          <div class="text-center m-3">
-            <h2 class="xl-text">Узнайте больше</h2>
-            <p class="m-text">Задавайте любые вопросы нашим специалистам <br> удобным для вас способом</p>
+          <div class="text-center">
+            <h2 class="xl-text mb-m">Узнайте больше</h2>
+            <p class="m-text mb-m">Задавайте любые вопросы нашим специалистам <br> удобным для вас способом</p>
           </div>
           <div class="row flex flex-row gap-3">
             <div class="col">
@@ -290,7 +452,7 @@
 
     <section class="contact" id="contact">
       <div class="container">
-        <div class="text-center">
+        <div class="text-center mb-m">
           <img class="contact__img" src="/img/icon.svg" alt="icon">
           <h2 class="xl-text">Контакты</h2>
           <p class="m-text">Первый сервис в Украине, с которым сотрудники могут получить <br> зарплату в любом месте и
@@ -299,9 +461,9 @@
           </p>
         </div>
         <div class="container contact__cards">
-          <div class="row justify-content-center">
+          <div class="row justify-content-between">
             <div class="col-md-6 d-flex">
-              <div class="card flex-fill mb-3 card-border text-center">
+              <div class="card flex-fill mb-3 card-border text-center mb-l">
                 <div class="card-body">
                   <div class="employees">
                     <p class="m-text">Для сотрудника</p>
@@ -338,14 +500,99 @@
                     <a class="remove-link-styles mb-2" href="tel:+380445021160">+380 (44) 502 11 60</a>
                     <p class="s-text">с 9.00 до 21.00</p>
                   </div>
-                  <button class="contact__btn btn btn-dark" type="button">Подключиться</button>
+                  <button class="contact__btn btn btn-dark" type="button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdropEmployer">Подключиться
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="staticBackdropEmployee" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabelEmployee" aria-hidden="true">
+        <div class="modal-dialog modal-container">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="text-center mb-m">
+              <h2 class="xl-text mb-m" id="staticBackdropLabelEmployee">Заполните форму</h2>
+              <p class="m-text">Мы свяжемся с вашим работадателем и презентуем <br> ему сервис “Зарплата каждый день”
+              </p>
+            </div>
+            <div class="modal-body">
+              <div class="input-group d-flex align-items-center justify-content-center">
+                <form>
+                  <input type="text" class="form-control modal-width form-input input-text mb-s"
+                    placeholder="Название компании"
+                    aria-label="CompanyName">
+                  <input type="text" class="form-control modal-width form-input input-text mb-s" placeholder="Ваше Имя"
+                    aria-label="Username">
+                  <input type="email" class="form-control modal-width form-input input-text mb-s"
+                    placeholder="Ваш Email"
+                    aria-label="Email">
+                  <input type="tel" class="form-control modal-width form-input input-text mb-m"
+                    placeholder="Номер телефона"
+                    aria-label="Phone">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox-employee">
+                    <label class="form-check-label m-text mb-m" for="checkbox-employee">
+                      Хотите остаться анонимным?
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer d-flex align-items-center justify-content-center">
+              <input type="submit" value="Отправить" class="btn btn-dark modal-width" data-bs-dismiss="modal" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdropEmployer" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabelEmployer" aria-hidden="true">
+        <div class="modal-dialog modal-container">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="text-center mb-m">
+              <h2 class="xl-text mb-m" id="staticBackdropLabelEmployer">Хотите подключить вашу <br> компанию к сервису?
+              </h2>
+              <p class="m-text">Заполните форму ниже</p>
+            </div>
+            <div class="modal-body">
+              <div class="input-group d-flex align-items-center justify-content-center">
+                <form>
+                  <input type="text" class="form-control modal-width form-input input-text mb-s"
+                    placeholder="Название компании"
+                    aria-label="CompanyName">
+                  <input type="text" class="form-control modal-width form-input input-text mb-s"
+                    placeholder="Ваша должность в компании"
+                    aria-label="Username">
+                  <input type="text" class="form-control modal-width form-input input-text mb-s" placeholder="Ваше Имя"
+                    aria-label="Username">
+                  <input type="email" class="form-control modal-width form-input input-text mb-s"
+                    placeholder="Ваш Email"
+                    aria-label="Email">
+                  <input type="tel" class="form-control modal-width form-input input-text mb-m"
+                    placeholder="Номер телефона"
+                    aria-label="Phone">
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer d-flex align-items-center justify-content-center">
+              <input type="submit" value="Отправить" class="btn btn-dark modal-width mb-m" data-bs-dismiss="modal" />
+              <p class="m-text">Подключение полностью бесплатное</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
+
+
   </main>
 
   <footer class="footer">

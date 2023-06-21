@@ -5,6 +5,15 @@
   color: inherit;
 }
 
+.container {
+  max-width: 1110px;
+}
+
+.row > * {
+  margin: 0;
+  padding: 0;
+}
+
 /* card styles */
 
 .card-border {
@@ -35,6 +44,12 @@
   border-radius: 24px;
 }
 
+.contact__cards .card-body {
+  width: 350px;
+  max-width: 100%;
+  padding: 35px 65px;
+}
+
 /* tags styles */
 
 body {
@@ -56,6 +71,21 @@ footer {
   margin-top: 60px;
 }
 
+/* bootstrap */
+
+p {
+  margin: 0;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #2D3C5A;
+  background-color: inherit;
+}
+
+.nav-pills .nav-link {
+  margin-bottom: 10px;
+}
+
 /* nav block */
 
 .nav-link {
@@ -69,15 +99,20 @@ footer {
   color: #969DAC;
 }
 
-.nav-link:first-child {
+.navbar .nav-link:first-child {
   padding-left: 0;
 }
 
-/* salary section */
-
-.salary__about > * {
-  margin-bottom: 24px;
+.dropdown-menu {
+  border: 1px solid #F0F0F0;
+  min-width: auto;
 }
+
+.dropdown-item {
+  color: #969DAC;
+}
+
+/* salary section */
 
 .salary__name {
   font-weight: 700;
@@ -90,11 +125,11 @@ footer {
   margin-top: 84px;
 }
 
-/* works section */
-
-.works__title {
-  margin-bottom: 60px;
+.salary__image {
+  padding-left: 125px;
 }
+
+/* works section */
 
 .works__rounded {
   position: relative;
@@ -104,15 +139,45 @@ footer {
   width: 540px;
 }
 
+.works__inner {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 330px;
+  bottom: 0px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 26px 14px;
+}
+
+.works__img {
+  padding-right: 15px;
+}
+
+.works__icon {
+  width: 24px;
+  height: 24px;
+}
+
 .works__cash-out-man {
   position: absolute;
-  left: 30px;
+  left: 18px;
   bottom: 0;
   /*z-index: 999;*/
 }
 
-/* cash-out block */
+.works .nav-link.active::after {
+  /*content: "";*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*width: 2px;*/
+  /*background-color: #F0F0F0;*/
+}
 
+/* cash-out block */
 .cash-out {
   position: absolute;
   right: 60px;
@@ -125,11 +190,12 @@ footer {
   border-radius: 24px;
 }
 
-.cash-out__text {
+.works__text {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
   color: #2D3C5A;
+  margin-bottom: 5px;
 }
 
 .cash-out__funds-text {
@@ -181,15 +247,23 @@ footer {
   border: 1px solid rgba(20, 210, 165, 0.1);
 }
 
+.benefits__employer-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3C5A;
+}
+
+.benefits__btn {
+  width: 228px;
+  max-width: 100%;
+}
+
 /* joining block */
 
 .joining {
   margin-top: 42px;
   margin-bottom: 14px;
-}
-
-.joining__btn {
-  margin: 24px 0;
 }
 
 /* q-and-a section */
@@ -234,7 +308,7 @@ footer {
 }
 
 .contact__email-img {
-  margin-top: 34px;
+  margin-top: 50px;
 }
 
 .contact__email {
@@ -244,4 +318,49 @@ footer {
 
 .contact__phone {
   margin-top: 16px;
+}
+
+/* modal */
+
+.modal-container {
+  width: 730px;
+  max-width: 100%;
+}
+
+.modal-content {
+  background: #FFFFFF;
+  box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.05);
+  border-radius: 24px;
+  padding: 32px 95px;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+  padding: 0;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-width {
+  width: 350px;
+  max-width: 100%;
+}
+
+.form-input {
+  background: #FFFFFF;
+  border: 1px solid #E0E2E6;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.form-input:focus, .form-check-input:focus {
+  box-shadow: none;
+  border: 1px solid #E0E2E6;
+}
+
+.form-check-input:checked {
+  background-color: #2D3C5A;
+  border-color: #2D3C5A;
 }

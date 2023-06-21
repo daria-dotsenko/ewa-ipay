@@ -5,10 +5,22 @@
 }
 
 .horizontal-line {
-  width: 100%;
-  height: 2px;
-  background-color: #F0F0F0;
-  margin-top: 14px;
+  /*width: 100%;*/
+  /*height: 2px;*/
+  /*background-color: #F0F0F0;*/
+  /*margin-top: 14px;*/
+
+  text-decoration-line: underline;
+  text-decoration-color: #F0F0F0;;
+
+  /*border-bottom: 1px solid red; !* Создаем горизонтальную линию под текстом (красная) *!*/
+  /*padding-bottom: 2px; !* Отступ под текстом (можно изменить значение по вашему усмотрению) *!*/
+  /*text-decoration: none; !* Отключаем стандартное подчеркивание текста *!*/
+  /*display: inline-block;*/
+}
+
+.horizontal-line.active {
+  text-decoration-color: #55A5FF;
 }
 
 .dashed-line {
