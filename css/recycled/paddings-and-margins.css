@@ -17,3 +17,13 @@
 .mb-xl {
   margin-bottom: 60px;
 }
+
+@media screen and (max-width: 360px) {
+  .mb-m {
+    margin-bottom: 18px;
+  }
+
+  .mb-l {
+    margin-bottom: 30px;
+  }
+}

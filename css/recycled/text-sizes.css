@@ -62,5 +62,20 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: red;
+}
+
+@media screen and (max-width: 360px) {
+  .salary__title {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .salary__name {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .salary__name br {
+    display: none;
+  }
 }

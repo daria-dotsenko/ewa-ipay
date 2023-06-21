@@ -1,12 +1,6 @@
-/* todo make universal classes for padding and margin or substitute from Bootstrap */
-
 .remove-link-styles {
   text-decoration: none;
   color: inherit;
-}
-
-.container {
-  max-width: 1110px;
 }
 
 .row > * {
@@ -88,6 +82,10 @@ p {
 
 /* nav block */
 
+.container-fluid {
+  padding: 0;
+}
+
 .nav-link {
   font-weight: 400;
   font-size: 16px;
@@ -103,6 +101,10 @@ p {
   padding-left: 0;
 }
 
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
 .dropdown-menu {
   border: 1px solid #F0F0F0;
   min-width: auto;
@@ -112,7 +114,30 @@ p {
   color: #969DAC;
 }
 
+.header .modal-dialog {
+  margin: 0;
+}
+
+.modal.fade .modal-dialog {
+  margin-left: auto;
+}
+
+.modal-size {
+  width: 245px;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+
+.modal-size .modal-content {
+  height: 100%;
+}
+
 /* salary section */
+
+.salary__direction {
+  flex-direction: row;
+}
 
 .salary__name {
   font-weight: 700;
@@ -127,6 +152,10 @@ p {
 
 .salary__image {
   padding-left: 125px;
+}
+
+.salary__image-visibility-2 {
+  display: none;
 }
 
 /* works section */
@@ -164,17 +193,6 @@ p {
   position: absolute;
   left: 18px;
   bottom: 0;
-  /*z-index: 999;*/
-}
-
-.works .nav-link.active::after {
-  /*content: "";*/
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*width: 2px;*/
-  /*background-color: #F0F0F0;*/
 }
 
 /* cash-out block */
@@ -363,4 +381,78 @@ p {
 .form-check-input:checked {
   background-color: #2D3C5A;
   border-color: #2D3C5A;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    position: relative;
+    width: 1110px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    width: 330px;
+    padding: 0;
+  }
+
+  .header .container {
+    padding: 0;
+  }
+
+  .header .container::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -14px;
+    width: 100vw;
+    height: 1px;
+    background-color: #EBECEF;
+  }
+
+  .header .modal-content {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .salary__direction {
+    flex-direction: column;
+  }
+
+  .salary__about {
+    display: contents;
+  }
+
+  .salary__title {
+    order: 1;
+  }
+
+  .salary__sign-in {
+    order: 3;
+    text-align: center;
+  }
+
+  .salary__image {
+    padding-left: 0;
+    order: 2;
+  }
+
+  .salary__image-visibility-1 {
+    display: none;
+  }
+
+  .salary__image-visibility-2 {
+    display: block;
+  }
+
+  .salary__sign-in .btn-green {
+    width: 330px;
+  }
+
+  .salary__visa {
+    margin-top: 28px;
+    justify-content: center;
+  }
 }
