@@ -3,11 +3,6 @@
   color: inherit;
 }
 
-.row > * {
-  margin: 0;
-  padding: 0;
-}
-
 /* card styles */
 
 .card-border {
@@ -80,6 +75,15 @@ p {
   margin-bottom: 10px;
 }
 
+.navbar-collapse {
+  flex-grow: inherit;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* nav block */
 
 .container-fluid {
@@ -97,9 +101,13 @@ p {
   color: #969DAC;
 }
 
-.navbar .nav-link:first-child {
-  padding-left: 0;
-}
+/*.navbar .nav-link:first-child {*/
+/*  padding-left: 0;*/
+/*}*/
+
+/*.navbar .nav-link:last-child {*/
+/*  padding-right: 0;*/
+/*}*/
 
 .navbar-light .navbar-toggler {
   border: none;
@@ -323,6 +331,7 @@ p {
 
 .contact__cards {
   max-width: 730px;
+  margin: auto;
 }
 
 .contact__email-img {
