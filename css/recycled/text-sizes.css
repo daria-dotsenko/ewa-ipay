@@ -12,10 +12,6 @@
   color: #969DAC;
 }
 
-.operations .s-text {
-  color: #2D3C5A;
-}
-
 .sm-text {
   font-weight: 400;
   font-size: 18px;
@@ -66,6 +62,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+.modal-nav-text {
+  color: #2D3C5A;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 @media screen and (max-width: 360px) {

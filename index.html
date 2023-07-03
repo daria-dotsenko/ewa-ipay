@@ -51,29 +51,12 @@
                 <a class="nav-link" href="#q-and-a">Вопросы и ответы</a>
               </li>
             </ul>
-
           </div>
           <div class="collapse navbar-collapse">
             <button class="btn btn-green" type="button">Войти</button>
           </div>
         </div>
       </nav>
-    </div>
-    <div class="modal fade" id="nav-burger" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-size">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-
-          </div>
-          <div class="modal-footer d-flex flex-column">
-            <p class="s-text">Для сотрудника</p>
-            <button type="button" class="btn btn-green mb-sm">Войти</button>
-          </div>
-        </div>
-      </div>
     </div>
   </header>
 
@@ -84,7 +67,7 @@
           <div class="col-6 salary__about">
             <div class="salary__title mb-m">
               <h1 class="salary__name mb-m">Зарплата <br> каждый день</h1>
-              <p class="m-text">Первый сервис в Украине, с которым сотрудники могут получать
+              <p class="m-text">Первый сервис в Украине, с которым сотрудники могут <br> получать
                 зарплату в любом месте и в любое время.
               </p>
             </div>
@@ -115,162 +98,64 @@
             день. Легко и быстро!
           </p>
         </div>
-        <div class="d-flex">
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-output" role="tabpanel"
-              aria-labelledby="v-pills-output-tab">
-              <div class="works__rounded col justify-content-start">
-                <div class="cash-out">
-                  <div class="d-flex">
-                    <img class="works__img" src="img/card.svg" alt="card">
-                    <div>
-                      <div class="works__text">Снять деньги</div>
-                      <h6 class="s-text">Снимайте доступные деньги</h6>
-                    </div>
+        <div class="row">
+          <div class="col-lg-6 works__content">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-output" role="tabpanel"
+                aria-labelledby="v-pills-output-tab">
+                <div class="works__rounded">
+                  <div class="cash-out">
+                    <img class="works__images" src="/img/cash-out-inner-image.svg" alt="cash-out-image">
                   </div>
-                  <div class="dashed-line"></div>
-                  <div class="cash-out__funds">
-                    <div class="cash-out__funds-text mb-3">12 000 <img src="img/UAH.svg" alt="UAH" class="mx-auto">
-                    </div>
-                    <h6 class="s-text">Доступные средства для снятия</h6>
-                  </div>
-                  <button class="cash-out__btn btn btn-green" type="button">Снять деньги</button>
                 </div>
-                <img class="works__cash-out-man" src="img/cash-out-man.svg" alt="cash-out-man">
               </div>
-            </div>
-            <div class="tab-pane fade" id="v-pills-statistic" role="tabpanel"
-              aria-labelledby="v-pills-statistic-tab">
-              <div class="works__rounded col justify-content-start">
-                <div class="works__inner">
-                  <div class="d-flex">
-                    <img class="works__img" src="img/statistic-horizontal.svg" alt="statistic">
-                    <div>
-                      <div class="works__text">Статистика</div>
-                      <h6 class="s-text">Ваша активность в системе</h6>
-                    </div>
+              <div class="tab-pane fade" id="v-pills-statistic" role="tabpanel"
+                aria-labelledby="v-pills-statistic-tab">
+                <div class="works__rounded col">
+                  <div class="works__inner">
+                    <img class="works__images" src="/img/statistic-inner-image.svg" alt="statistic-image">
                   </div>
-                  <div class="dashed-line"></div>
-                  <p class="s-text mb-s">Ноябрь 2020</p>
-
-                  <div class="row">
-                    <div class="col-md-7 d-flex flex-column operations">
-                      <div class="row h-100 mb-s">
-                        <div class="col d-flex">
-                          <img class="works__icon" src="img/vacation.svg" alt="vacation">
-                          <div>
-                            <p class="s-text">Отпускные</p>
-                            <p class="xs-text">29.02.2021</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row h-100 mb-s">
-                        <div class="col d-flex">
-                          <img class="works__icon" src="img/output.svg" alt="output">
-                          <div>
-                            <p class="s-text">Вывод средств</p>
-                            <p class="xs-text">24.02.2021</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row h-100 mb-s">
-                        <div class="col d-flex">
-                          <img class="works__icon" src="img/premium.svg" alt="premium">
-                          <div>
-                            <p class="s-text">Премия</p>
-                            <p class="xs-text">18.02.2021</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row h-100 mb-s">
-                        <div class="col d-flex">
-                          <img class="works__icon" src="img/prepayment.svg" alt="prepayment">
-                          <div>
-                            <p class="s-text">Выплата за перву</p>
-                            <p class="xs-text">15.02.2021</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row h-100 mb-s">
-                        <div class="col d-flex">
-                          <img class="works__icon" src="img/output.svg" alt="output">
-                          <div>
-                            <p class="s-text">Вывод средств</p>
-                            <p class="xs-text">14.02.2021</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row h-100 mb-s">
-                        <div class="col d-flex">
-                          <img class="works__icon" src="img/sick.svg" alt="sick">
-                          <div>
-                            <p class="s-text">Больничный</p>
-                            <p class="xs-text">01.12.2020</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-5 d-flex flex-column operations-amounts">
-                      <div class="row h-100">
-                        <div class="col text-end s-text green-text">+ 15 000 грн</div>
-                      </div>
-                      <div class="row h-100">
-                        <div class="col text-end s-text red-text">- 300 грн</div>
-                      </div>
-                      <div class="row h-100">
-                        <div class="col text-end s-text green-text">+ 10 000 грн</div>
-                      </div>
-                      <div class="row h-100">
-                        <div class="col text-end s-text green-text">+ 10 000 грн</div>
-                      </div>
-                      <div class="row h-100">
-                        <div class="col text-end s-text red-text">- 200 грн</div>
-                      </div>
-                      <div class="row h-100">
-                        <div class="col text-end s-text green-text">+ 5 000 грн</div>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
               </div>
             </div>
           </div>
-          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link output active" id="v-pills-output-tab" data-bs-toggle="pill"
-              data-bs-target="#v-pills-output"
-              role="tab" aria-controls="v-pills-output" aria-selected="true">
-              <div class="d-flex flex-row">
-                <div class="output__inner">
-                  <svg class="mb-sm" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="works__icon-color"
-                      d="M20 20H4C2.89543 20 2 19.1046 2 18V6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20ZM4 12V18H20V12H4ZM4 6V8H20V6H4ZM13 16H6V14H13V16Z"
-                      fill="#C0C5CE" />
-                  </svg>
-                  <h4 class="ml-text mb-m">Выводите зарплату</h4>
-                  <p class="m-text">Не ждите даты выдачи зарплаты, теперь вы<br>можете ее получать в любой день!
-                    Выводить <br>зарплату можно на ваш IBAN счет, или на<br>любую карту.
-                  </p>
+          <div class="col-lg-6">
+            <div class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link output active" id="v-pills-output-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-output"
+                role="tab" aria-controls="v-pills-output" aria-selected="true">
+                <div class="d-flex flex-row">
+                  <div class="output__inner">
+                    <svg class="mb-sm" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path class="works__icon-color"
+                        d="M20 20H4C2.89543 20 2 19.1046 2 18V6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20ZM4 12V18H20V12H4ZM4 6V8H20V6H4ZM13 16H6V14H13V16Z"
+                        fill="#C0C5CE" />
+                    </svg>
+                    <h4 class="ml-text mb-m">Выводите зарплату</h4>
+                    <p class="m-text">Не ждите даты выдачи зарплаты, теперь вы<br>можете ее получать в любой день!
+                      Выводить <br>зарплату можно на ваш IBAN счет, или на<br>любую карту.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a class="nav-link statistic" id="v-pills-statistic-tab" data-bs-toggle="pill"
-              data-bs-target="#v-pills-statistic"
-              role="tab" aria-controls="v-pills-statistic" aria-selected="false">
-              <div class="d-flex flex-row">
-                <div class="statistic__inner">
-                  <svg class="mb-sm" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="works__icon-color"
-                      d="M21 21H18V11H21V21ZM16 21H13V8H16V21ZM11 21H8V5H11V21ZM6 21H3V13H6V21Z" fill="#C0C5CE" />
-                  </svg>
-                  <h4 class="ml-text mb-m">Доступ к статистике</h4>
-                  <p class="m-text">Каждый день вы получаете обновленную<br>статистику по вашей зарплате.
-                  </p>
+              </a>
+              <a class="nav-link statistic" id="v-pills-statistic-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-statistic"
+                role="tab" aria-controls="v-pills-statistic" aria-selected="false">
+                <div class="d-flex flex-row">
+                  <div class="statistic__inner">
+                    <svg class="mb-sm" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path class="works__icon-color"
+                        d="M21 21H18V11H21V21ZM16 21H13V8H16V21ZM11 21H8V5H11V21ZM6 21H3V13H6V21Z" fill="#C0C5CE" />
+                    </svg>
+                    <h4 class="ml-text mb-m">Доступ к статистике</h4>
+                    <p class="m-text">Каждый день вы получаете обновленную<br>статистику по вашей зарплате.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -382,7 +267,7 @@
     </section>
 
     <section class="q-and-a" id="q-and-a">
-      <div class="container">
+      <div class="q-and-a__container">
         <div class="d-flex flex-column align-items-center">
           <h2 class="xl-text mb-xl">Вопросы и ответы</h2>
           <div class="accordion w-100" id="accordion">
@@ -445,29 +330,23 @@
             <h2 class="xl-text mb-m">Узнайте больше</h2>
             <p class="m-text mb-m">Задавайте любые вопросы нашим специалистам <br> удобным для вас способом</p>
           </div>
-          <div class="row flex flex-row gap-3">
-            <div class="col">
-              <div class="card-border card-telegram card h-100 text-center">
-                <div class="card-body">
-                  <img class="q-and-a__img" src="img/telegram.svg" alt="telegram">
-                  <h5 class="card-text m-text">Telegram</h5>
-                </div>
+          <div class="d-flex">
+            <div class="card-border card-telegram card h-100 text-center">
+              <div class="card-body">
+                <img class="q-and-a__img" src="img/telegram.svg" alt="telegram">
+                <h5 class="card-text m-text">Telegram</h5>
               </div>
             </div>
-            <div class="col">
-              <div class="card-border card-viber card h-100 text-center">
-                <div class="card-body">
-                  <img class="q-and-a__img" src="img/viber.svg" alt="viber">
-                  <h5 class="card-text m-text">Viber</h5>
-                </div>
+            <div class="card-border card-viber card h-100 text-center">
+              <div class="card-body">
+                <img class="q-and-a__img" src="img/viber.svg" alt="viber">
+                <h5 class="card-text m-text">Viber</h5>
               </div>
             </div>
-            <div class="col">
-              <div class="card-border card-facebook card h-100 text-center">
-                <div class="card-body">
-                  <img class="q-and-a__img" src="img/facebook.svg" alt="facebook">
-                  <h5 class="card-text m-text">Facebook</h5>
-                </div>
+            <div class="card-border card-facebook card h-100 text-center">
+              <div class="card-body">
+                <img class="q-and-a__img" src="img/facebook.svg" alt="facebook">
+                <h5 class="card-text m-text">Facebook</h5>
               </div>
             </div>
           </div>
@@ -477,7 +356,7 @@
 
     <section class="contact" id="contact">
       <div class="container">
-        <div class="text-center mb-m">
+        <div class="text-center mb-l">
           <img class="contact__img" src="img/icon.svg" alt="icon">
           <h2 class="xl-text">Контакты</h2>
           <p class="m-text">Первый сервис в Украине, с которым сотрудники могут получить <br> зарплату в любом месте и
@@ -485,57 +364,73 @@
             любое время.
           </p>
         </div>
-        <div class="contact__cards">
-          <div class="row justify-content-between">
-            <div class="col-md-6 d-flex">
-              <div class="card flex-fill mb-3 card-border text-center mb-l">
-                <div class="card-body">
-                  <div class="employees">
-                    <p class="m-text">Для сотрудника</p>
-                    <div class="horizontal-line"></div>
-                  </div>
-                  <img class="contact__email-img" src="img/email-contact.svg" alt="email-contact">
-                  <div class="contact__email">
-                    <a class="remove-link-styles mb-2" href="mailto:help@ewa.com">help@ewa.com</a>
-                    <p class="s-text">Пишите нам на email</p>
-                  </div>
-                  <img src="img/phone-contact.svg" alt="phone-contact">
-                  <div class="contact__phone">
-                    <a class="remove-link-styles mb-2" href="tel:+380447772250">+380 (44) 777 22 50</a>
-                    <p class="s-text">с 9.00 до 21.00</p>
-                  </div>
-                  <button class="contact__btn btn btn-green" type="button">Войти</button>
-                </div>
+        <div class="row justify-content-center">
+          <div class="col-auto mb-4 mx-3">
+            <div class="card-border text-center">
+              <p class="contact__user m-text">Для сотрудника</p>
+              <img class="contact__email-img" src="img/email-contact.svg" alt="email-contact">
+              <div class="contact__email">
+                <a class="remove-link-styles mb-2" href="mailto:help@ewa.com">help@ewa.com</a>
+                <p class="s-text">Пишите нам на email</p>
               </div>
+              <img src="img/phone-contact.svg" alt="phone-contact">
+              <div class="contact__phone">
+                <a class="remove-link-styles mb-2" href="tel:+380447772250">+380 (44) 777 22 50</a>
+                <p class="s-text">с 9.00 до 21.00</p>
+              </div>
+              <button class="contact__btn btn btn-green" type="button">Войти</button>
             </div>
-            <div class="col-md-6 d-flex">
-              <div class="card flex-fill mb-3 card-border text-center">
-                <div class="card-body">
-                  <div class="employer">
-                    <p class="m-text">Для работодателя</p>
-                    <div class="horizontal-line"></div>
-                  </div>
-                  <img class="contact__email-img" src="img/email-contact.svg" alt="email-contact">
-                  <div class="contact__email">
-                    <a class="remove-link-styles mb-2" href="mailto:partner@ewa.com">partner@ewa.com</a>
-                    <p class="s-text">Пишите нам на email</p>
-                  </div>
-                  <img src="img/phone-contact.svg" alt="phone-contact">
-                  <div class="contact__phone">
-                    <a class="remove-link-styles mb-2" href="tel:+380445021160">+380 (44) 502 11 60</a>
-                    <p class="s-text">с 9.00 до 21.00</p>
-                  </div>
-                  <button class="contact__btn btn btn-dark" type="button" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdropEmployer">Подключиться
-                  </button>
-                </div>
+          </div>
+          <div class="col-auto mx-3">
+            <div class="mb-3 card-border text-center">
+              <p class="contact__user m-text">Для работодателя</p>
+              <img class="contact__email-img" src="img/email-contact.svg" alt="email-contact">
+              <div class="contact__email">
+                <a class="remove-link-styles mb-2" href="mailto:partner@ewa.com">partner@ewa.com</a>
+                <p class="s-text">Пишите нам на email</p>
               </div>
+              <img src="img/phone-contact.svg" alt="phone-contact">
+              <div class="contact__phone">
+                <a class="remove-link-styles mb-2" href="tel:+380445021160">+380 (44) 502 11 60</a>
+                <p class="s-text">с 9.00 до 21.00</p>
+              </div>
+              <button class="contact__btn btn btn-dark" type="button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdropEmployer">Подключиться
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="modal fade" id="staticBackdropEmployee" data-bs-backdrop="static" data-bs-keyboard="false"
+      <div class="modal fade nav-burger" id="nav-burger" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-size">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ul class="modal-nav text-center">
+                <li class="nav-item">
+                  <a class="nav-link modal-nav-text mb-xl" href="#works">Как это работает</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link modal-nav-text mb-xl" href="#benefits">Преимущества</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link modal-nav-text" href="#q-and-a">Вопросы и ответы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer d-flex flex-column">
+              <p class="s-text">Для сотрудника</p>
+              <button type="button" class="btn btn-green mb-sm">Войти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade modal__feedback-form" id="staticBackdropEmployee" data-bs-backdrop="static"
+        data-bs-keyboard="false"
         tabindex="-1"
         aria-labelledby="staticBackdropLabelEmployee" aria-hidden="true">
         <div class="modal-dialog modal-container">
@@ -576,7 +471,8 @@
         </div>
       </div>
 
-      <div class="modal fade" id="staticBackdropEmployer" data-bs-backdrop="static" data-bs-keyboard="false"
+      <div class="modal fade modal__feedback-form" id="staticBackdropEmployer" data-bs-backdrop="static"
+        data-bs-keyboard="false"
         tabindex="-1"
         aria-labelledby="staticBackdropLabelEmployer" aria-hidden="true">
         <div class="modal-dialog modal-container">
@@ -614,10 +510,7 @@
           </div>
         </div>
       </div>
-
     </section>
-
-
   </main>
 
   <footer class="footer">
