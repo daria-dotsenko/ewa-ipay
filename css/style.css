@@ -50,6 +50,21 @@
   margin-left: 30px;
 }
 
+.card-telegram:hover {
+  background: rgba(73, 165, 232, 0.2);
+  border-color: rgba(73, 165, 232, 0.2);
+}
+
+.card-viber:hover {
+  background: rgba(136, 97, 178, 0.2);
+  border-color: rgba(136, 97, 178, 0.2);
+}
+
+.card-facebook:hover {
+  background: rgba(74, 153, 247, 0.2);
+  border-color: rgba(74, 153, 247, 0.2);
+}
+
 /* tags styles */
 
 body {
@@ -222,6 +237,10 @@ p {
   margin-bottom: 40px;
 }
 
+.output__inner, .statistic__inner {
+  cursor: pointer;
+}
+
 /* benefits section */
 
 .benefits {
@@ -381,6 +400,10 @@ p {
   background-color: #F0F0F0;
 }
 
+.contact .card-border:hover .contact__user::after {
+  background-color: #55A5FF;
+}
+
 /* modal */
 
 .modal.fade .modal-dialog {
@@ -499,7 +522,7 @@ p {
   .works__content {
     padding-bottom: 32px;
   }
-  
+
   .q-and-a__margin {
     margin-left: 120px;
     margin-right: 120px;

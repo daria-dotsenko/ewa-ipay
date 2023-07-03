@@ -12,14 +12,15 @@
   padding-bottom: 16px;
 }
 
-.btn-dark {
+.btn-black {
   background: #2D3C5A;
+  color: #FFFFFF;
   box-shadow: 0 4px 40px rgba(45, 60, 90, 0.05);
   border-radius: 8px;
   padding: 14px 24px;
 }
 
-.btn-green:hover, .btn-dark:hover {
+.btn-green:hover, .btn-black:hover {
   color: #FFFFFF;
   box-shadow: 0 20px 30px rgba(45, 60, 90, 0.1);
 }
@@ -72,8 +73,12 @@
   margin-right: 24px;
 }
 
-.btn-blue:focus, .btn-green:focus, .btn-dark:focus, .btn-close:focus, .navbar-toggler:focus {
+.btn-blue:focus, .btn-green:focus, .btn-black:focus, .btn-close:focus, .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.btn-green:hover, .btn-black:hover {
+  cursor: url("/img/clarity_cursor-hand-line.svg"), auto;
 }
 
 @media screen and (max-width: 768px) {
