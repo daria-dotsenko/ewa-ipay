@@ -71,7 +71,7 @@
   line-height: 32px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 576px) {
   .salary__title {
     text-align: center;
     margin-top: 40px;
@@ -81,8 +81,18 @@
     font-size: 24px;
     line-height: 40px;
   }
+}
 
-  .salary__name br {
-    display: none;
+@media screen and (max-width: 360px) {
+  .sm-text {
+    font-size: 16px;
+  }
+
+  .ml-text {
+    font-size: 18px;
+  }
+
+  .xl-text {
+    font-size: 24px;
   }
 }

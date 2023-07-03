@@ -19,3 +19,67 @@
   margin: 24px 0;
 }
 
+/* highlighting */
+
+.works .nav-link {
+  padding: 0 0 0 30px;
+  margin-bottom: 40px;
+}
+
+.works .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #F0F0F0;
+}
+
+.works .nav-link.active::before {
+  background-color: #55A5FF;
+  height: 30%;
+  bottom: auto;
+}
+
+.works .nav-link.active::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #F0F0F0;
+}
+
+.works .nav-pills .nav-link {
+  position: relative;
+}
+
+.active .works__icon-color {
+  fill: #55A5FF;
+}
+
+.benefits .nav-link {
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.benefits .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 120%;
+  height: 2px;
+  background-color: #F0F0F0;
+}
+
+.benefits .nav-link.active::after {
+  background-color: #55A5FF;
+}
+
+.benefits .nav-item {
+  width: 160px;
+}
+

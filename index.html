@@ -163,7 +163,7 @@
 
     <section class="benefits" id="benefits">
       <div class="container">
-        <div class="d-flex flex-column align-items-center text-center mb-3">
+        <div class="text-center mb-3">
           <h2 class="xl-text mb-m">Преимущества сервиса</h2>
           <p class="m-text">Первый сервис в Украине, с которым сотрудники могут получить <br>
             заработанную зарплату в любой удобный день.
@@ -225,7 +225,7 @@
                 </div>
               </div>
             </div>
-            <div class="joining align-items-center">
+            <div class="benefits__joining align-items-center">
               <div class="mx-auto text-center">
                 <button class="btn btn-blue mb-sm">Ваша компания еще не подключена?
                 </button>
@@ -267,7 +267,7 @@
     </section>
 
     <section class="q-and-a" id="q-and-a">
-      <div class="q-and-a__container">
+      <div class="q-and-a__margin">
         <div class="d-flex flex-column align-items-center">
           <h2 class="xl-text mb-xl">Вопросы и ответы</h2>
           <div class="accordion w-100" id="accordion">
@@ -421,8 +421,8 @@
                 </li>
               </ul>
             </div>
-            <div class="modal-footer d-flex flex-column">
-              <p class="s-text">Для сотрудника</p>
+            <div class="modal-submit d-flex flex-column justify-content-center align-items-center">
+              <p class="s-text mb-sm">Для сотрудника</p>
               <button type="button" class="btn btn-green mb-sm">Войти</button>
             </div>
           </div>
@@ -442,7 +442,7 @@
               </p>
             </div>
             <div class="modal-body">
-              <div class="input-group d-flex align-items-center justify-content-center">
+              <div class="input-group justify-content-center">
                 <form>
                   <input type="text" class="form-control modal-width form-input input-text mb-sm"
                     placeholder="Название компании"
@@ -461,11 +461,11 @@
                       Хотите остаться анонимным?
                     </label>
                   </div>
+                  <div class="modal-submit justify-content-center">
+                    <input class="btn btn-dark modal-width" type="submit" value="Отправить" data-bs-dismiss="modal" />
+                  </div>
                 </form>
               </div>
-            </div>
-            <div class="modal-footer d-flex align-items-center justify-content-center">
-              <input type="submit" value="Отправить" class="btn btn-dark modal-width" data-bs-dismiss="modal" />
             </div>
           </div>
         </div>
@@ -481,10 +481,11 @@
             <div class="text-center mb-m">
               <h2 class="xl-text mb-m" id="staticBackdropLabelEmployer">Хотите подключить вашу <br> компанию к сервису?
               </h2>
-              <p class="m-text">Заполните форму ниже</p>
+              <p class="m-text">Заполните форму ниже
+              </p>
             </div>
             <div class="modal-body">
-              <div class="input-group d-flex align-items-center justify-content-center">
+              <div class="input-group justify-content-center">
                 <form>
                   <input type="text" class="form-control modal-width form-input input-text mb-sm"
                     placeholder="Название компании"
@@ -500,12 +501,13 @@
                   <input type="tel" class="form-control modal-width form-input input-text mb-m"
                     placeholder="Номер телефона"
                     aria-label="Phone">
+                  <div class="modal-submit justify-content-center text-center">
+                    <input class="btn btn-dark mb-m modal-width" type="submit" value="Отправить"
+                      data-bs-dismiss="modal" />
+                    <p class="m-text modal-width">Подключение полностью бесплатное</p>
+                  </div>
                 </form>
               </div>
-            </div>
-            <div class="modal-footer d-flex align-items-center justify-content-center">
-              <input type="submit" value="Отправить" class="btn btn-dark modal-width mb-m" data-bs-dismiss="modal" />
-              <p class="m-text">Подключение полностью бесплатное</p>
             </div>
           </div>
         </div>
@@ -521,5 +523,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous">
   </script>
+  
 </body>
 </html>
